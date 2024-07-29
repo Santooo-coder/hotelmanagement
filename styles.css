@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to left, maroon, salmon);
+    color: white;
+    height: 6vh;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+nav ul li a:hover {
+    background: white;
+    color: maroon;
+    border-radius: 5px;
+}
+
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://static.theceomagazine.net/wp-content/uploads/2018/08/16091600/GHB-OBS-04_NEW.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+.hero h1, .hero p, .hero button {
+    position: relative;
+    z-index: 1;
+}
+.hero h1 {
+    font-size: 3em;
+    font-family: cursive;
+    margin-bottom: 10px;
+    color:white;
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    color: salmon;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: maroon;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.hero button:hover {
+    background: linear-gradient(to right, maroon, salmon);
+    transform: scale(1.1);
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+#about h2{
+    color: maroon;
+}
+#services h2{
+    color: maroon;
+}
+#contact h2{
+    color: maroon;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background:linear-gradient(to left,maroon,salmon);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+form button:hover {
+    background: linear-gradient(to right, maroon, salmon);
+    transform: scale(1.1);
+}
+
